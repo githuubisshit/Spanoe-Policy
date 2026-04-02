@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Spanoe</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        h1 {
+            font-size: 1.8rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 10px;
+            color: #000;
+        }
+        h2 {
+            font-size: 1.3rem;
+            margin-top: 30px;
+            color: #007aff;
+            border-left: 4px solid #007aff;
+            padding-left: 12px;
+        }
+        h3 {
+            font-size: 1.1rem;
+            margin-top: 20px;
+            color: #444;
+        }
+        p {
+            margin: 12px 0;
+        }
+        .date-info {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+        blockquote {
+            background: #f0f7ff;
+            border-left: 5px solid #007aff;
+            margin: 25px 0;
+            padding: 15px 20px;
+            font-style: italic;
+            border-radius: 0 4px 4px 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9em;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy / 隐私政策</h1>
 
+        <p class="date-info">
+            <strong>Effective date / 生效日期:</strong> 2026-02-09<br>
+            <strong>Last updated / 最近更新:</strong> 2026-02-09
+        </p>
+
+        <p>Spanoe (“the App”, “we”, “us”) is a countdown and date-tracking app. We care about your privacy. This Privacy Policy explains what data the App processes, why it does so, and your choices.</p>
+
+        <blockquote>
+            中文摘要：本应用以本地功能为主，不自建服务器收集个人信息。倒数日数据、图片、分类与设置主要存储在设备本地；如启用 iCloud/CloudKit，同步数据存储在您的 iCloud 中并由 Apple 处理。我们不接入第三方广告或统计 SDK（以当前版本代码为准）。
+        </blockquote>
+
+        <h2>1. What data we collect and process / 我们处理哪些数据</h2>
+
+        <h3>1.1 Data you create in the App / 你在应用中创建的数据</h3>
+        <p>The App stores the following primarily on your device:</p>
+        <ul>
+            <li>Event data: title, target date, repeat rules, reminder settings, pinned status.</li>
+            <li>Category data.</li>
+            <li>Optional cover image you choose for an event.</li>
+            <li>App preferences (theme, notification toggle, layout, etc.).</li>
+        </ul>
+        <p><em>Technical note:</em> This data is stored using <code>SwiftData</code> and <code>UserDefaults</code>, and may be stored in an <strong>App Group</strong> container so the main app and widgets can access the same database.</p>
+
+        <h3>1.2 Photos you select / 你选择的照片</h3>
+        <p>If you choose a cover image, the App reads the photo you select, optionally lets you crop it, and stores the processed image <strong>locally</strong> as part of the event. We do <strong>not</strong> upload your photos to our servers.</p>
+
+        <h3>1.3 Calendar holiday import / 日历节假日导入</h3>
+        <p>If you use the “Holidays” import/sync feature, the App requests access to your system calendars and reads holiday/all-day events. We use this to create/update holiday countdown entries. We do <strong>not</strong> upload your calendar data to our servers.</p>
+
+        <h3>1.4 Notifications / 通知</h3>
+        <p>If you enable reminders, the App schedules <strong>local notifications</strong> on your device. We do <strong>not</strong> send remote push notifications for reminders in the current version.</p>
+
+        <h3>1.5 Purchases (StoreKit) / 内购（StoreKit）</h3>
+        <p>If you purchase “Spanoe Pro”, Apple processes the payment. We use <code>StoreKit</code> to determine your entitlement status. We do not receive your full payment details.</p>
+
+        <h3>1.6 iCloud / CloudKit / iCloud 同步</h3>
+        <p>If you enable iCloud/CloudKit syncing, your app data may be stored in your iCloud account. Apple acts as a service provider for iCloud/CloudKit under Apple’s policies.</p>
+
+        <h2>2. Permissions we request / 我们请求的系统权限</h2>
+        <p>Depending on what features you use, the App may request:</p>
+        <ul>
+            <li><strong>Photos</strong>: to select and crop a cover image for an event.</li>
+            <li><strong>Calendars</strong>: to import holiday events into the “Holidays” category.</li>
+            <li><strong>Notifications</strong>: to schedule local reminders.</li>
+        </ul>
+        <p>You can change permissions at any time in iOS Settings.</p>
+
+        <h2>3. Third-party services / 第三方服务</h2>
+        <p>As of this version, the App does <strong>not</strong> include third-party advertising SDKs or analytics SDKs.</p>
+
+        <h2>4. Data retention and deletion / 数据保存与删除</h2>
+        <ul>
+            <li>You can delete individual events/categories in the App.</li>
+            <li>You can use “Delete All Data” in Settings to remove app data stored locally.</li>
+            <li>If you use iCloud/CloudKit, deletion may also affect synced data depending on Apple’s sync behavior.</li>
+        </ul>
+
+        <h2>5. Security / 安全</h2>
+        <p>We rely on iOS security features (device passcode/Face ID, app sandboxing, iCloud security) to protect your data. We follow platform best practices and minimize data access.</p>
+
+        <h2>6. Children’s privacy / 未成年人隐私</h2>
+        <p>The App is not intended for children under the age where parental consent is required. If you believe a child has provided personal data to us, please contact us.</p>
+
+        <h2>7. International users / 国际用户</h2>
+        <p>Your data is processed on your device and, if iCloud/CloudKit is enabled, stored in Apple’s infrastructure, which may be located in other countries.</p>
+
+        <h2>8. Changes to this policy / 政策更新</h2>
+        <p>We may update this Privacy Policy from time to time. We will update the “Last updated” date above.</p>
+
+        <h2>9. Contact us / 联系我们</h2>
+        <p>Questions about this Privacy Policy:</p>
+        <p>Email / 邮箱: <code>support@daymatters.app</code></p>
+
+        <div class="footer">
+            &copy; 2026 Spanoe. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
