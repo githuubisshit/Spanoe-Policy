@@ -3,75 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人主页</title>
+    <title>联系方式</title>
     <style>
-        /* 1. 基础设置：让背景看起来干净柔和 */
+        /* 1. 让背景极简，突出文字 */
         body {
             margin: 0;
-            padding: 0;
-            font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
-            background-color: #f5f7fa; /* 浅灰色背景 */
+            height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* 让内容垂直居中 */
-            color: #333;
+            background-color: #ffffff; /* 纯白背景 */
+            font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: #000;
         }
 
-        /* 2. 卡片样式：像名片一样浮起来 */
-        .card {
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* 淡淡的阴影 */
-            text-align: center;
-            max-width: 350px;
-            width: 90%;
-        }
-
-        /* 3. 标题样式 */
-        h1 {
-            font-size: 24px;
+        /* 2. 这里的标题 */
+        .label {
+            font-size: 14px;
+            color: #888;
+            letter-spacing: 2px;
+            text-transform: uppercase;
             margin-bottom: 10px;
-            color: #2c3e50;
         }
 
-        /* 4. 邮箱文本样式 */
-        .email {
-            font-size: 16px;
-            color: #7f8c8d;
-            margin-bottom: 30px;
-            word-break: break-all; /* 防止长邮箱换行错位 */
+        /* 3. 核心：让邮箱地址巨大且清晰 */
+        .email-address {
+            font-size: clamp(24px, 8vw, 60px); /* 字体大小随屏幕自动缩放 */
+            font-weight: 700;
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0; /* 给个浅灰色底块，增加视觉重点 */
+            border-radius: 12px;
+            word-break: break-all;
+            text-align: center;
         }
 
-        /* 5. 按钮样式：让联系变得有仪式感 */
-        .btn {
-            display: inline-block;
-            background-color: #007AFF; /* 经典的科技蓝 */
-            color: white;
+        /* 4. 辅助提示 */
+        .hint {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #007AFF;
             text-decoration: none;
-            padding: 12px 25px;
-            border-radius: 50px;
-            font-weight: 500;
-            transition: transform 0.2s; /* 增加点击动画 */
-        }
-
-        .btn:hover {
-            transform: scale(1.05); /* 鼠标放上去稍微变大 */
-            background-color: #0056b3;
+            border-bottom: 1px solid #007AFF;
         }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <h1>你好，我是 Philip</h1>
-        <p class="email">philiptrip1975@gmail.com</p>
-        <a href="mailto:philiptrip1975@gmail.com" class="btn">发邮件给我</a>
-    </div>
-
-</body>
-</html>
+    <div class="label">My Email Address</div>
+    <p class="email-address">philiptrip1975@gmail.com</p>
+    
+    <a href="mailto:philiptrip1975@gmail.com" class="hint">点击直接发邮件</a>
 
 </body>
 </html>
