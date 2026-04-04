@@ -3,68 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>联系我</title>
+    <title>个人主页</title>
     <style>
-        /* 基础样式：让页面看起来干净现代 */
+        /* 1. 基础设置：让背景看起来干净柔和 */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: #f4f7f6; /* 淡淡的底色 */
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f7fa; /* 浅灰色背景 */
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
+            height: 100vh; /* 让内容垂直居中 */
+            color: #333;
         }
 
-        /* 卡片样式：像名片一样浮起来 */
+        /* 2. 卡片样式：像名片一样浮起来 */
         .card {
             background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* 柔和的阴影 */
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* 淡淡的阴影 */
             text-align: center;
             max-width: 350px;
             width: 90%;
         }
 
+        /* 3. 标题样式 */
         h1 {
-            color: #333;
-            margin-bottom: 0.5rem;
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #2c3e50;
         }
 
-        p {
-            color: #666;
-            margin-bottom: 1.5rem;
+        /* 4. 邮箱文本样式 */
+        .email {
+            font-size: 16px;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            word-break: break-all; /* 防止长邮箱换行错位 */
         }
 
-        /* 按钮样式：让邮箱地址看起来可以点击 */
-        .email-link {
+        /* 5. 按钮样式：让联系变得有仪式感 */
+        .btn {
             display: inline-block;
-            background-color: #007AFF; /* 经典的蓝色 */
+            background-color: #007AFF; /* 经典的科技蓝 */
             color: white;
             text-decoration: none;
             padding: 12px 25px;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: transform 0.2s, background-color 0.2s;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: transform 0.2s; /* 增加点击动画 */
         }
 
-        /* 鼠标悬停效果 */
-        .email-link:hover {
+        .btn:hover {
+            transform: scale(1.05); /* 鼠标放上去稍微变大 */
             background-color: #0056b3;
-            transform: translateY(-2px);
         }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <h1>你好！</h1>
-        <p>如果你有任何问题，欢迎随时联系我。</p>
-        <a href="mailto:philiptrip1975@gmail.com" class="email-link">
-            发送邮件
-        </a>
+        <h1>你好，我是 Philip</h1>
+        <p class="email">philiptrip1975@gmail.com</p>
+        <a href="mailto:philiptrip1975@gmail.com" class="btn">发邮件给我</a>
     </div>
+
+</body>
+</html>
 
 </body>
 </html>
